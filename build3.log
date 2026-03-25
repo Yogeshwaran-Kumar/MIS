@@ -1,0 +1,53 @@
+﻿
+> mis-app@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 3.5s
+  Running TypeScript ...
+node.exe : Failed to type check.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Fail 
+   ed to type check.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./src/app/admin/contributions/page.tsx:124:45
+Type error: Type 
+'Dispatch<SetStateAction<string>>' is not 
+assignable to type '(value: string | null, 
+eventDetails: SelectRootChangeEventDetails) => 
+void'.
+  Types of parameters 'value' and 'value' are 
+incompatible.
+    Type 'string | null' is not assignable to 
+type 'SetStateAction<string>'.
+      Type 'null' is not assignable to type 
+'SetStateAction<string>'.
+
+  [90m122 |[0m             <div 
+className=[32m"flex-1 w-full space-y-2"[0m>
+  [90m123 |[0m               
+<[33mLabel[0m>[33mSelect[0m [33mEvent[0m to 
+[33mManage[0m</[33mLabel[0m>
+[31m[1m>[0m [90m124 |[0m               
+<[33mSelect[0m value={selectedEvent} 
+onValueChange={setSelectedEvent}>
+  [90m    |[0m                                  
+           [31m[1m^[0m
+  [90m125 |[0m                 
+<[33mSelectTrigger[0m>
+  [90m126 |[0m                   
+<[33mSelectValue[0m placeholder=[32m"Choose an 
+event..."[0m />
+  [90m127 |[0m                 
+</[33mSelectTrigger[0m>
+Next.js build worker exited with code: 1 and 
+signal: null

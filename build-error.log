@@ -1,0 +1,71 @@
+﻿
+> mis-app@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:Str 
+   ing) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/admin/events/page.tsx:6:1
+Module not found: Can't resolve 
+'@/components/ui/textarea'
+  [90m4 |[0m [36mimport[0m { [33mButton[0m 
+} [36mfrom[0m [32m'@/components/ui/button'[0m
+  [90m5 |[0m [36mimport[0m { [33mInput[0m } 
+[36mfrom[0m [32m'@/components/ui/input'[0m
+[31m[1m>[0m [90m6 |[0m [36mimport[0m { 
+[33mTextarea[0m } [36mfrom[0m 
+[32m'@/components/ui/textarea'[0m
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { [33mCard[0m, 
+[33mCardContent[0m, [33mCardHeader[0m, 
+[33mCardTitle[0m, [33mCardDescription[0m } 
+[36mfrom[0m [32m'@/components/ui/...[0m
+  [90m8 |[0m [36mimport[0m { [33mTable[0m, 
+[33mTableBody[0m, [33mTableCell[0m, 
+[33mTableHead[0m, [33mTableHeader[0m, 
+[33mTableRow[0m } [36mfrom[0m 
+[32m'@/components...[0m
+  [90m9 |[0m [36mimport[0m { [33mDialog[0m, 
+[33mDialogContent[0m, [33mDialogHeader[0m, 
+[33mDialogTitle[0m, [33mDialogTrigger[0m } 
+[36mfrom[0m [32m'@/componen...[0m
+
+Import map: aliased to relative 
+'./src/components/ui/textarea' inside of 
+[project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/events/page.tsx [Client 
+Component Browser]
+    ./src/app/admin/events/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./src/app/admin/events/page.tsx [Client 
+Component SSR]
+    ./src/app/admin/events/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> 
+(./src/app/admin/events/page.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages
+/module-not-found)

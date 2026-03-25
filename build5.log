@@ -1,0 +1,42 @@
+﻿
+> mis-app@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 3.2s
+  Running TypeScript ...
+node.exe : Failed to type check.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Fail 
+   ed to type check.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./src/app/admin/page.tsx:132:63
+Type error: 'percent' is possibly 'undefined'.
+
+  [90m130 |[0m                     
+paddingAngle={[35m5[0m}
+  [90m131 |[0m                     
+dataKey=[32m"value"[0m
+[31m[1m>[0m [90m132 |[0m                     
+label={({ name, percent }) => 
+[32m`[0m${name[32m} [0m${(percent * 
+[35m100[0m).toFixed([35m0[0m)[32m}%`[0m}
+  [90m    |[0m                                  
+                             [31m[1m^[0m
+  [90m133 |[0m                     
+labelLine={[36mtrue[0m}
+  [90m134 |[0m                   >
+  [90m135 |[0m                     
+{stats.categoriesChart.map((entry: any, index: 
+number) => (
+Next.js build worker exited with code: 1 and 
+signal: null

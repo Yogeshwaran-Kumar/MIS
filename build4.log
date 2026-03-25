@@ -1,0 +1,44 @@
+﻿
+> mis-app@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 3.2s
+  Running TypeScript ...
+node.exe : Failed to type check.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Fail 
+   ed to type check.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./src/app/admin/events/page.tsx:85:26
+Type error: Type '{ children: Element; asChild: 
+true; }' is not assignable to type 
+'IntrinsicAttributes & Props<unknown>'.
+  Property 'asChild' does not exist on type 
+'IntrinsicAttributes & Props<unknown>'.
+
+  [90m83 |[0m         
+  [90m84 |[0m         <[33mDialog[0m 
+open={isDialogOpen} 
+onOpenChange={setIsDialogOpen}>
+[31m[1m>[0m [90m85 |[0m           
+<[33mDialogTrigger[0m asChild>
+  [90m   |[0m                          
+[31m[1m^[0m
+  [90m86 |[0m             <[33mButton[0m 
+className=[32m"gap-2"[0m>
+  [90m87 |[0m               <[33mPlus[0m 
+className=[32m"w-4 h-4"[0m /> [33mAdd[0m 
+[33mNew[0m [33mEvent[0m
+  [90m88 |[0m             </[33mButton[0m>
+Next.js build worker exited with code: 1 and 
+signal: null
