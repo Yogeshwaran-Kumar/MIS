@@ -1,4 +1,4 @@
-# NDLI Club — Management Information System (MIS)
+# Club — Management Information System (MIS)
 
 A premium, production-grade administrative tool for NDLI Clubs to manage members, events, and volunteer contributions with ease.
 
